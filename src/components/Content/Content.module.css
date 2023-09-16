@@ -1,0 +1,18 @@
+.movieBoxes {
+  /* padding: 2rem; */
+  /* height: 600px; */
+  /* background-color: red; */
+  margin: 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-rows: 300px 300px; */
+  gap: 10rem 6rem;
+  justify-items: center;
+  /* justify-content: center; */
+}
+/* 
+.movieBox {
+  height: 60rem;
+  width: 100%;
+  background-color: black;
+} */

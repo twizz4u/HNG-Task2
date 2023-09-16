@@ -1,0 +1,10 @@
+.featured {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+.featured a {
+  text-align: end;
+}

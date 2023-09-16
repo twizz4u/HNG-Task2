@@ -1,0 +1,60 @@
+.movieBox {
+  width: 100%;
+  height: 50rem;
+}
+
+.movieImageBox {
+  height: 80%;
+  width: 100%;
+  background-color: blue;
+}
+
+.movieBox .movieImage {
+  width: 100%;
+  height: 100%;
+}
+
+.iconRating {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.4rem;
+}
+
+.voteCountIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.4rem;
+}
+
+.movieBoxContent {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.ratingBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.ratingBox div {
+  display: flex;
+}
+
+.ratingBox div:last-child {
+  text-align: end;
+  justify-content: end;
+}
+
+.ratingBox span {
+  margin-right: 1.2rem;
+}
+
+.movieBoxTitle {
+  margin: 0.4rem 0;
+}

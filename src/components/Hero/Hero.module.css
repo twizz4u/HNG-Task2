@@ -1,0 +1,100 @@
+.header {
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 10%;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  padding: 2rem 4rem;
+  row-gap: 6rem;
+  margin-bottom: 8rem;
+  color: #fff;
+}
+
+.navBar {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.homeBox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.homeBox img {
+  border-radius: 50%;
+}
+
+.heroTitle {
+  margin-bottom: 0.6rem;
+}
+
+.heroContent {
+  margin-bottom: 0.6rem;
+}
+
+.heroButton {
+  padding: 2rem 6rem;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.heroRatingBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.heroIconBox {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+form {
+  text-align: center;
+  position: relative;
+}
+
+form input {
+  width: 80%;
+  padding: 0.4rem;
+  border-radius: 2rem;
+}
+
+form input:focus {
+  outline: #ddd;
+}
+
+form img {
+  position: absolute;
+  top: 50%;
+  left: 86%;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+}
+
+.signBox {
+  display: flex;
+  justify-content: end;
+  gap: 0.6rem;
+}
+
+.signBox img {
+  border-radius: 0.2rem;
+  height: 24px;
+  width: 24px;
+}
+
+.headerContent {
+  grid-area: 2/1/-1 / span 1;
+  /* align-self: center; */
+}

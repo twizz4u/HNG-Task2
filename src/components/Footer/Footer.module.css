@@ -1,0 +1,22 @@
+.footer {
+  display: grid;
+  justify-items: center;
+  margin-top: 8rem;
+  padding: 2rem;
+}
+
+.footer ul {
+  display: grid;
+  list-style: none;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  justify-items: center;
+}
+
+.iconBox {
+  grid-template-columns: repeat(4, max-content);
+}
+
+.conditionBox {
+  grid-template-columns: repeat(3, max-content);
+}
