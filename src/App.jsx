@@ -10,13 +10,13 @@ import "./App.css";
 
 const router = createBrowserRouter([
   {
-    path: "/twizz4u.github.io/HNG-Task2/",
+    path: "/",
     element: <Layout />,
     errorElement: <Error />,
     children: [
       { index: true, element: <Hompage />, loader: MoviesLooder },
       {
-        path: "/twizz4u.github.io/HNG-Task2/movies/:id",
+        path: "/movies/:id",
         element: <Details />,
         loader: movieLoader,
       },
