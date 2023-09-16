@@ -25,11 +25,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <HashRouter basename="/">
-      <RouterProvider router={router} />;
-    </HashRouter>
-  );
+  return <RouterProvider router={router} />;
 
   // return (
   //   <>
