@@ -8,20 +8,21 @@ import Error from "./components/ErrorPage/EroorPage";
 
 import "./App.css";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <Layout />,
-      errorElement: <Error />,
-      children: [
-        { index: true, element: <Hompage />, loader: MoviesLooder },
-        { path: "/movies/:id", element: <Details />, loader: movieLoader },
-      ],
-    },
-  ],
-  { basename: "/twizz4u.github.io/HNG-Task2/" }
-);
+const router = createBrowserRouter([
+  {
+    path: "/twizz4u.github.io/HNG-Task2/",
+    element: <Layout />,
+    errorElement: <Error />,
+    children: [
+      { index: true, element: <Hompage />, loader: MoviesLooder },
+      {
+        path: "/twizz4u.github.io/HNG-Task2/movies/:id",
+        element: <Details />,
+        loader: movieLoader,
+      },
+    ],
+  },
+]);
 
 function App() {
   return <RouterProvider router={router} />;
