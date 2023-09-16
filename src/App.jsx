@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  HashRouter,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Hompage from "./components/Hompage/Hompage";
 import { Loader as MoviesLooder } from "./components/Content/Content";
@@ -12,17 +8,20 @@ import Error from "./components/ErrorPage/EroorPage";
 
 import "./App.css";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    errorElement: <Error />,
-    children: [
-      { index: true, element: <Hompage />, loader: MoviesLooder },
-      { path: "/movies/:id", element: <Details />, loader: movieLoader },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <Error />,
+      children: [
+        { index: true, element: <Hompage />, loader: MoviesLooder },
+        { path: "/movies/:id", element: <Details />, loader: movieLoader },
+      ],
+    },
+  ],
+  { basename: "/twizz4u.github.io/HNG-Task2/" }
+);
 
 function App() {
   return <RouterProvider router={router} />;
