@@ -12,7 +12,7 @@ import Error from "./components/ErrorPage/EroorPage";
 
 import "./App.css";
 
-const router = HashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
