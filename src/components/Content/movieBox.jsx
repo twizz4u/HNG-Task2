@@ -73,12 +73,6 @@ async function Loader() {
     // throw new Response(JSON.stringify({ message: 'Could not fetch events.' }), {
     //   status: 500,
     // });
-    throw json(
-      { message: "Could not fetch events." },
-      {
-        status: 500,
-      }
-    );
   } else {
     console.log(await response.json());
     return response;
