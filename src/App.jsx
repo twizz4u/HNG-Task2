@@ -14,13 +14,13 @@ import "./App.css";
 
 const router = HashRouter([
   {
-    path: "/",
+    path: "/twizz4u.github.io/HNG-Task2/#",
     element: <Layout />,
     errorElement: <Error />,
     children: [
       { index: true, element: <Hompage />, loader: MoviesLooder },
       {
-        path: "/movies/:id",
+        path: "/twizz4u.github.io/HNG-Task2/#/movies/:id",
         element: <Details />,
         loader: movieLoader,
       },
