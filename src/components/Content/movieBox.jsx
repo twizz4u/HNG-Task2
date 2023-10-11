@@ -27,7 +27,7 @@ const MovieBox = (prop) => {
   const movies = newData.map((data, index) => {
     return (
       <div key={data.id} className={classes.movieBox} data-testid="movie-card">
-        <Link to={`/movies/${imbd[index]?.imdb_id}`}>
+        <Link to={`/HNG-Task2/movies/${imbd[index]?.imdb_id}`}>
           <div className={classes.movieImageBox}>
             <img
               data-testid="movie-poster"

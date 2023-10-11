@@ -10,13 +10,13 @@ import "./App.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/HNG-Task2",
     element: <Layout />,
     errorElement: <Error />,
     children: [
       { index: true, element: <Hompage />, loader: MoviesLooder },
       {
-        path: "/movies/:id",
+        path: "/HNG-Task2/movies/:id",
         element: <Details />,
         loader: movieLoader,
       },
